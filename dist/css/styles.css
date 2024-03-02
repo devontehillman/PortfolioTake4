@@ -3962,7 +3962,7 @@ textarea.form-control-lg {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
-  font-size: 3.25rem;
+  font-size: 3.00rem;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -10973,17 +10973,18 @@ section.about-section {
   padding-top: 5rem;
   padding-bottom: 5rem;
   max-width: 75rem;
+  min-height: 100vh;
 }
 section.about-section .about-section-content {
   width: 100%;
 }
 
 @media (max-width: 991.98px) {
-  .name-title {
+  #name-title {
     display: none;
   }
 
-  section.resume-section {
+  section.about-section-content {
     padding-left: 3rem;
     padding-right: 3rem;
     padding-top: 3rem;
