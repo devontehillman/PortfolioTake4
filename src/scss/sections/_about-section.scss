@@ -1,0 +1,32 @@
+
+section.about-section {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    max-width: 75rem;
+    min-height: 100vh;
+
+    .about-section-content {
+        width: 100%;
+    }
+
+}
+
+@include media-breakpoint-down(lg) {
+    // hide name tittle on medium and smaller screens
+    #name-title {
+        display: none;
+    }
+
+    section.about-section-content {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-top: 3rem;
+        padding-bottom: 5rem;
+    }
+    
+}
+
