@@ -1,6 +1,6 @@
 
 section.about-section {
-    display: flex;
+    display: flex; 
     align-items: center;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -8,6 +8,23 @@ section.about-section {
     padding-bottom: 5rem;
     max-width: 75rem;
     min-height: 100vh;
+
+    .waviy {
+        position: relative;
+      }
+      .waviy span {
+        position: relative;
+        display: inline-block;
+        color: #000000;
+        text-transform: uppercase;
+        animation: flip 2s ;
+        animation-delay: calc(.2s * var(--i))
+      }
+      @keyframes flip {
+        0%,80% {
+          transform: rotateY(360deg) 
+        }
+      }
 
     .about-section-content {
         width: 100%;
