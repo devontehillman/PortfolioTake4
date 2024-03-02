@@ -3962,7 +3962,7 @@ textarea.form-control-lg {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
-  font-size: 1.25rem;
+  font-size: 3.25rem;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -10965,6 +10965,31 @@ p.lead {
   font-size: 3rem;
 }
 
+section.about-section {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  max-width: 75rem;
+}
+section.about-section .about-section-content {
+  width: 100%;
+}
+
+@media (max-width: 991.98px) {
+  .name-title {
+    display: none;
+  }
+
+  section.resume-section {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+  }
+}
 section.resume-section {
   display: flex;
   align-items: center;
