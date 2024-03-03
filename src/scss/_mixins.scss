@@ -1,0 +1,52 @@
+
+@keyframes flip {
+    0%, 80% {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes slidein {
+    from {
+        transform: translateX(-400%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideup {
+    from {
+        transform: translateY(200%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+
+
+
+@mixin flip($duration){
+    animation: flip $duration ease-in-out;
+}
+
+@mixin slide-in($duration){
+    animation: slidein $duration ease-in-out;
+}
+
+@mixin slide-up($duration){
+    animation: slideup $duration linear
+}
+
+@mixin fade-in($duration){
+    animation: fadeIn $duration ease-in-out;
+}
+
+
+
