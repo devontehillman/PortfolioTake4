@@ -4,6 +4,64 @@
 * Copyright 2013-2024 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
 */
+@-webkit-keyframes flip {
+  0%, 80% {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes flip {
+  0%, 80% {
+    transform: rotateY(360deg);
+  }
+}
+@-webkit-keyframes slidein {
+  from {
+    transform: translateX(-400%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slidein {
+  from {
+    transform: translateX(-400%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes slideup {
+  from {
+    transform: translateY(200%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes slideup {
+  from {
+    transform: translateY(200%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /*!
  * Bootstrap v5.0.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -3962,7 +4020,7 @@ textarea.form-control-lg {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
-  font-size: 3.00rem;
+  font-size: 1.25rem;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -10967,6 +11025,8 @@ p.lead {
 
 section.about-section {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -10977,6 +11037,18 @@ section.about-section {
 }
 section.about-section .about-section-content {
   width: 100%;
+}
+section.about-section #name-title {
+  -webkit-animation: slideup 1s linear;
+          animation: slideup 1s linear;
+}
+section.about-section #about-text {
+  -webkit-animation: slideup 1s linear;
+          animation: slideup 1s linear;
+}
+section.about-section .social-icons {
+  -webkit-animation: slideup 1s linear;
+          animation: slideup 1s linear;
 }
 
 @media (max-width: 991.98px) {
